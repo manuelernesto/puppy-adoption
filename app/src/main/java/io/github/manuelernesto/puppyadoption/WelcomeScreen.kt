@@ -1,10 +1,12 @@
 package io.github.manuelernesto.puppyadoption
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.*
+import androidx.compose.material.Button
+import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.Surface
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -13,9 +15,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.navigate
+
 
 @Composable
-fun Welcome() {
+fun Welcome(navController: NavController) {
     Column(modifier = Modifier.fillMaxSize()) {
 
         Image(
@@ -53,7 +58,7 @@ fun Welcome() {
 
                 Button(
                     shape = RoundedCornerShape(10.dp),
-                    onClick = { /*TODO*/ },
+                    onClick = { navController.navigate("home_screen") },
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(16.dp),
