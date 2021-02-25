@@ -8,6 +8,7 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import io.github.manuelernesto.puppyadoption.ui.component.PuppyListItem
 import io.github.manuelernesto.puppyadoption.ui.theme.PuppyAdoptionTheme
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             PuppyAdoptionTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
+                    App()
                 }
             }
         }
@@ -25,14 +26,14 @@ class MainActivity : AppCompatActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+fun App() {
+    Welcome()
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     PuppyAdoptionTheme {
-        Greeting("Android")
+        Welcome()
     }
 }
