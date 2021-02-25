@@ -4,10 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Button
-import androidx.compose.material.ButtonColors
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -35,29 +32,45 @@ fun Welcome() {
             ) {
                 Column {
                     Text(
+
                         text = "Find your next\n" +
                                 "best friend",
                         fontSize = 30.sp,
-                        fontWeight = FontWeight(600)
+                        fontWeight = FontWeight(600),
+                        color = colorResource(id = R.color.color_txt)
                     )
 
                     Text(
                         text = "We will help you to find your \n" +
-                                "next best friend."
+                                "next best friend.",
+                        fontSize = 18.sp,
+                        color = colorResource(id = R.color.color_txt),
+                        modifier = Modifier.padding(top = 16.dp)
+
                     )
                 }
-
 
 
                 Button(
                     shape = RoundedCornerShape(10.dp),
                     onClick = { /*TODO*/ },
-                    modifier = Modifier.fillMaxWidth().padding(32.dp)
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp),
+                    colors = ButtonDefaults.buttonColors(backgroundColor = colorResource(id = R.color.green_btn))
                 )
                 {
-                    Text(text = "Start")
+                    Text(
+                        text = "Start",
+                        fontSize = 25.sp,
+                        fontWeight = FontWeight(600),
+                        color = colorResource(id = R.color.color_txt),
+                        modifier = Modifier.padding(8.dp)
+                    )
                 }
+
             }
+
         }
 
 

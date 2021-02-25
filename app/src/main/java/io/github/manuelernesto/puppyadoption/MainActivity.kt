@@ -3,12 +3,19 @@ package io.github.manuelernesto.puppyadoption
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import io.github.manuelernesto.puppyadoption.ui.component.PuppyListItem
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import io.github.manuelernesto.puppyadoption.ui.theme.PuppyAdoptionTheme
 
 class MainActivity : AppCompatActivity() {
@@ -16,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             PuppyAdoptionTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
                     App()
                 }
@@ -37,3 +43,5 @@ fun DefaultPreview() {
         Welcome()
     }
 }
+
+
