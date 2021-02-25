@@ -19,8 +19,13 @@ fun ComposeNavigation() {
             HomeScreen(navController)
 
         }
-        composable("detail_screen/{puppy}") {
-            DetailScreen(navController, it.arguments?.getString("puppy"))
+        composable(
+            "detail_screen/{puppy}"
+        ) {
+            DetailScreen(
+                navController,
+                it.arguments?.getString("puppy")
+            )
         }
 
     }
