@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Puppy Adoption</string>
+    <string name="location_txt">Luanda, Angola</string>
+    <string name="location_label">Location</string>
+    <string name="btn_adop_txt">Adoption me</string>
+    <string name="btn_start_txt">Start</string>
 </resources>

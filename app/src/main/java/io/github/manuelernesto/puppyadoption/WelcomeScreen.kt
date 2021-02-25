@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -38,16 +39,14 @@ fun Welcome(navController: NavController) {
                 Column {
                     Text(
 
-                        text = "Find your next\n" +
-                                "best friend",
+                        text = "Find your next\nbest friend",
                         fontSize = 30.sp,
                         fontWeight = FontWeight(600),
                         color = colorResource(id = R.color.color_txt)
                     )
 
                     Text(
-                        text = "We will help you to find your \n" +
-                                "next best friend.",
+                        text = "We will help you to find your \nnext best friend.",
                         fontSize = 18.sp,
                         color = colorResource(id = R.color.color_txt),
                         modifier = Modifier.padding(top = 16.dp)
@@ -66,7 +65,7 @@ fun Welcome(navController: NavController) {
                 )
                 {
                     Text(
-                        text = "Start",
+                        text = stringResource(R.string.btn_start_txt),
                         fontSize = 25.sp,
                         fontWeight = FontWeight(600),
                         color = colorResource(id = R.color.color_txt),
