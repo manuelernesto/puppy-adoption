@@ -19,7 +19,7 @@ val puppies = listOf(
     Puppy(
         "Mandy",
         "Greyhound",
-        description = "Taking care of a pet is my favorite, it helps me to...",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit augue, pulvinar nec odio vel, suscipit aliquet odio. Vestibulum finibus tempor elit, id consectetur massa elementum at. In tristique pharetra urna, vel pharetra urna aliquam quis. Etiam sit amet lacus est. Suspendisse ut arcu eget mauris rhoncus scelerisque.",
         img = R.mipmap.greyhound,
         bgImg = R.mipmap.greyhound_large,
         color = R.color.color_primary_1,
@@ -29,7 +29,7 @@ val puppies = listOf(
     ), Puppy(
         "Ruby",
         "Dobermann",
-        description = "Taking care of a pet is my favorite, it helps me to...",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit augue, pulvinar nec odio vel, suscipit aliquet odio. Vestibulum finibus tempor elit, id consectetur massa elementum at. In tristique pharetra urna, vel pharetra urna aliquam quis. Etiam sit amet lacus est. Suspendisse ut arcu eget mauris rhoncus scelerisque.",
         img = R.mipmap.dobermann,
         bgImg = R.mipmap.dobermann_large,
         color = R.color.color_primary_2,
@@ -40,7 +40,7 @@ val puppies = listOf(
     Puppy(
         "Jupiter",
         "Pomeranian",
-        description = "Taking care of a pet is my favorite, it helps me to...",
+        description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit augue, pulvinar nec odio vel, suscipit aliquet odio. Vestibulum finibus tempor elit, id consectetur massa elementum at. In tristique pharetra urna, vel pharetra urna aliquam quis. Etiam sit amet lacus est. Suspendisse ut arcu eget mauris rhoncus scelerisque.",
         img = R.mipmap.pomeranian,
         bgImg = R.mipmap.pomeranian_large,
         color = R.color.color_primary_3,

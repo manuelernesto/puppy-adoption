@@ -49,29 +49,54 @@ fun DetailScreen(navController: NavController?, puppyId: String?) {
                         .clip(shape = RoundedCornerShape(topStart = 50.dp, topEnd = 50.dp))
                 ) {
                     Column(modifier = Modifier.padding(16.dp)) {
+                        Row(
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+
+                            Text(
+                                text = puppy.name,
+                                fontSize = 20.sp,
+                                fontWeight = FontWeight(600),
+                                color = colorResource(id = R.color.color_txt),
+                                modifier = Modifier.padding(start = 16.dp)
+                            )
+
+                            Image(
+                                painter = painterResource(id = puppy.fav),
+                                contentDescription = null,
+                                alignment = Alignment.TopEnd,
+                                modifier = Modifier.padding(end = 16.dp)
+
+                            )
+                        }
+
                         Text(
-                            text = "Location",
-                            fontSize = 18.sp,
+                            text = "Luanda, Angola",
                             color = colorResource(id = R.color.color_txt),
-                            modifier = Modifier.padding(start = 16.dp)
-                        )
-                        Text(
-                            text = "Age, de ${puppy.name}", fontSize = 12.sp,
-                            color = colorResource(id = R.color.color_txt),
-                            modifier = Modifier.padding(start = 16.dp)
+                            fontSize = 16.sp,
+                            modifier = Modifier.padding(start = 16.dp, top = 8.dp)
                         )
 
+                        Row(modifier = Modifier.padding(top = 16.dp, bottom = 16.dp)) {
+                            Text(
+                                text = puppy.category, fontSize = 12.sp,
+                                color = colorResource(id = R.color.color_txt),
+                                modifier = Modifier.padding(start = 16.dp)
+                            )
+
+                            Text(
+                                text = puppy.age, fontSize = 12.sp,
+                                color = colorResource(id = R.color.color_txt),
+                                modifier = Modifier.padding(start = 16.dp)
+                            )
+
+                        }
 
                         Text(
-                            text = "Description", fontSize = 12.sp,
+                            text = puppy.description, fontSize = 16.sp,
                             color = colorResource(id = R.color.color_txt),
-                            modifier = Modifier.padding(start = 16.dp)
-                        )
-
-                        Text(
-                            text = puppy.description, fontSize = 12.sp,
-                            color = colorResource(id = R.color.color_txt),
-                            modifier = Modifier.padding(start = 16.dp)
+                            modifier = Modifier.padding(start = 16.dp, bottom = 16.dp)
                         )
 
                         Button(
