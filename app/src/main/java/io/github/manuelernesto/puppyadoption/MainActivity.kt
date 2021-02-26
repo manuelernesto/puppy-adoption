@@ -19,10 +19,8 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
     }
 }
-
 
 @Composable
 fun App() {

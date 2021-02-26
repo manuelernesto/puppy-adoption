@@ -19,7 +19,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import io.github.manuelernesto.puppyadoption.ui.component.PuppyListItem
+import io.github.manuelernesto.puppyadoption.ui.composables.PuppyListItem
 import io.github.manuelernesto.puppyadoption.ui.data.puppies
 
 @Composable
